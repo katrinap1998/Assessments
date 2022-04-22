@@ -16,10 +16,9 @@ public class HealthyHearts {
             System.out.println("What is your age?:");
             int age = Integer.parseInt(inputScanner.nextLine());
             if (age > 0) {
-                System.out.println("Your maximum hear rate = " + (heartRate - age));
-                System.out.println("Your target HR zone is = " +
-                        (heartRate * minZone) + "-" + (heartRate * maxZone) +
-                        " beats per minute");
+                System.out.printf("Your maximum hear rate %d%n ", (heartRate - age));
+                System.out.printf("Your target HR zone is %f - %f beats per minute",
+                        (heartRate * minZone), (heartRate * maxZone));
                 break;
             }
             System.out.println("Enter valid age");
